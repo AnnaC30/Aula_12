@@ -10,8 +10,11 @@ public class Filme extends Conteudo {
 
     @Override
     public void exibirInfo() {
-        super.exibirInfo();
+        System.out.println("\n=== INFORMAÇÕES DO FILME ===");
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Duração: " + getDuracao() + " minutos");
         System.out.println("Diretor: " + diretor);
-        System.out.println("------------------------");
+        System.out.println("--------------------------");
     }
 }

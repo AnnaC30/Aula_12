@@ -1,6 +1,6 @@
 package Aula_12;
 
-public class Conteudo {
+public abstract class Conteudo {
     private String titulo;
     private String categoria;
     private int duracao;
@@ -23,9 +23,5 @@ public class Conteudo {
         return duracao;
     }
 
-    public void exibirInfo() {
-        System.out.println("Título: " + titulo);
-        System.out.println("Categoria: " + categoria);
-        System.out.println("Duração: " + duracao + " minutos");
-    }
+    public abstract void exibirInfo();
 }

@@ -10,8 +10,11 @@ public class Serie extends Conteudo {
 
     @Override
     public void exibirInfo() {
-        super.exibirInfo();
+        System.out.println("\n=== INFORMAÇÕES DA SÉRIE ===");
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Duração por episódio: " + getDuracao() + " minutos");
         System.out.println("Temporadas: " + temporadas);
-        System.out.println("------------------------");
+        System.out.println("--------------------------");
     }
 }
